@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#" class="logo"><i class="fas fa-hand-rock"></i>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-item"><a id="reset-game" href="#">Reset Game</a></li>
+      <li class="nav-item"><a class="popup-trigger" data-popup-trigger="one">
+          Instructions
+        </a></li>
+    </ul>
+  </nav>
+
+  <section class="game">
+    <div class="score">
+      <div class="player-score">
+        <h2>Player</h2>
+        <p>0</p>
+      </div>
+      <div class="computer-score">
+        <h2>Computer</h2>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div class="intro">
+      <h1>Rock Paper Scissors</h1>
+      <button>Let's Play</button>
+    </div>
+
+    <div class="match fadeOut">
+      <h2 class="winner">Make Your Selection</h2>
+      <div class="hands">
+        <img class="player-hand" src="./assets/rock.png" alt="" />
+        <img class="computer-hand" src="./assets/rock.png" alt="" />
+      </div>
+      <div class="options">
+        <button class="rock">rock</button>
+        <button class="paper">paper</button>
+        <button class="scissors">scissors</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- body overlay -->
+  <div class="body-blackout"></div>
+
+  <!-- Modals -->
+  <div class="popup-modal" data-popup-modal="one">
+    <i class="fas fa-2x fa-times popup-modal__close"></i>
+    <h2>Game Instructions</h2>
+    <div class="devicer"></div>
+    <div>
+      <ul>
+        <li class="list-item">Click "Let's Play" button.</li>
+        <li class="list-item">Choose between Rock, Paper or Scissors by clicking button.
+        </li>
+        <li class="list-item"><img src="./assets/rock.png" alt="" /> Rock beats Scissors.</li>
+        <li class="list-item"><img src="./assets/scissors.png" alt="" /> Scissors beats Paper.</li>
+        <li class="list-item"><img src="./assets/paper.png" alt="" /> Paper beats Rock.</li>
+        <li class="list-item">Display Score on top</li>
+        <li class="list-item">Play again!</li>
+      </ul>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
