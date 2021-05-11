@@ -278,9 +278,9 @@ div.fadeIn {
 
 @media (max-width: 576px) {
   .winner {
+    margin-top: 60px;
     font-size: 30px;
     text-align: center;
-    margin-top: 25px;
   }
   .hands img {
     width: 100%;
